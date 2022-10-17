@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'App',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass'],
+  templateUrl: './AppComponent.html',
+  styleUrls: ['./AppComponent.sass'],
 })
 export class AppComponent {
   title = 'AstroDateFrontend';

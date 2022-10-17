@@ -5,4 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './SideMenuComponent.html',
   styleUrls: ['./SideMenuComponent.sass'],
 })
-export class SideMenu {}
+export class SideMenuComponent {}

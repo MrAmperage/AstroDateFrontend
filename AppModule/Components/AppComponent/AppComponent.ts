@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'App',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './AppComponent.html',
   styleUrls: ['./AppComponent.sass'],
 })
-export class AppComponent {
-  title = 'AstroDateFrontend';
+export class AppComponent implements OnInit {
+  constructor() {}
+  ngOnInit(): void {
+    console.log('Компонент загрузился');
+  }
 }

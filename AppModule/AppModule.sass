@@ -6,3 +6,11 @@ html,body
     @extend %FullExtend,
     margin: 0
     padding: 0
+
+#AppContainer
+    @extend %FullExtend,
+    display: grid
+    grid-template-rows: 1fr 7fr
+
+.FullExtend
+    @extend %FullExtend,

@@ -1,10 +1,14 @@
 @import "../../AppModule"
 
-#AppContainer
+.SideMenu
+    @extend %FullExtend,
+    border-right: 1px solid #33333342
+
+#ContentContainer
     @extend %FullExtend,
     display: grid
     grid-template-columns: 1fr 7fr
 
-    .SideMenu
-        @extend %FullExtend,
-        background-color: #a59c9c34
+#Header
+    @extend %FullExtend,
+    border-bottom: 1px solid #33333342

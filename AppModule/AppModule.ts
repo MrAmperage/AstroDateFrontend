@@ -5,10 +5,10 @@ import { AppRoutingModule } from './AppModuleRouting';
 import { AppComponent } from './Components/AppComponent/AppComponent';
 import { SideMenuComponent } from './Components/SideMenuComponent/SideMenuComponent';
 import { HeaderComponent } from './Components/HeaderComponent/HeaderComponent';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [AppComponent, SideMenuComponent, HeaderComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

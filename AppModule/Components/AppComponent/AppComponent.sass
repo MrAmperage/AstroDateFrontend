@@ -1,14 +1,18 @@
 @import "../../AppModule"
-
 .SideMenu
     @extend %FullExtend,
-    border-right: 1px solid #33333342
+    border-right: 1px solid $DeviderColor
 
 #ContentContainer
     @extend %FullExtend,
     display: grid
-    grid-template-columns: 1fr 7fr
+    grid-template-columns: 1fr 11fr
 
 #Header
     @extend %FullExtend,
-    border-bottom: 1px solid #33333342
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid $DeviderColor
+
+#Content
+    background-color: #0c0c0c8f

@@ -7,8 +7,14 @@ import { SideMenuComponent } from './Components/SideMenuComponent/SideMenuCompon
 import { HeaderComponent } from './Components/HeaderComponent/HeaderComponent';
 import { FormsModule } from '@angular/forms';
 import { GlobalStore } from './Services/SlobalStoreService/GlobalsStoreService';
+import { ContentComponent } from './Components/ContentComponent/ContentComponent';
 @NgModule({
-  declarations: [AppComponent, SideMenuComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    SideMenuComponent,
+    HeaderComponent,
+    ContentComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [GlobalStore],
   bootstrap: [AppComponent],

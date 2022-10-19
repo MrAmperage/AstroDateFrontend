@@ -5,11 +5,11 @@ import { GlobalStore } from 'AppModule/Services/SlobalStoreService/GlobalsStoreS
   selector: 'SideMenu',
   templateUrl: './SideMenuComponent.html',
   styleUrls: ['./SideMenuComponent.sass'],
-  providers: [GlobalStore],
 })
 export class SideMenuComponent implements OnInit {
-  ApplicationMenu: string[] = [];
   constructor(private GlobalStoreObject: GlobalStore) {}
+  ApplicationMenu: string[] = [];
+
   ngOnInit(): void {
     this.ApplicationMenu = this.GlobalStoreObject.getApplicationMenu;
   }

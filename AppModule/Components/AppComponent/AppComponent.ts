@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { GlobalStore } from '../../Services/SlobalStoreService/GlobalsStoreService';
+import { Component } from '@angular/core';
 @Component({
   selector: 'App',
-  providers: [GlobalStore],
   templateUrl: './AppComponent.html',
   styleUrls: ['./AppComponent.sass'],
 })

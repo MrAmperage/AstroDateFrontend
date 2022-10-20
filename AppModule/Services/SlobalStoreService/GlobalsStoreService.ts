@@ -1,8 +1,9 @@
+import { MenuItem } from './GlobalStoreServiceTypes';
+
 export class GlobalStore {
-  private ApplicationMenu: string[] = [
-    'Пункт меню1',
-    'Пункт меню2',
-    'Пункт меню3',
+  private ApplicationMenu: MenuItem[] = [
+    { Id: 'Users', Caption: 'Пользователи' },
+    { Id: 'Roles', Caption: 'Роли пользователей' },
   ];
   get getApplicationMenu() {
     return this.ApplicationMenu;

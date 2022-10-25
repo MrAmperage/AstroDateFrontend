@@ -1,17 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { GlobalStore } from 'AppModule/Services/SlobalStoreService/GlobalsStoreService';
-import { MenuItem } from 'AppModule/Services/SlobalStoreService/GlobalStoreServiceTypes';
+import { Component } from '@angular/core';
+import { GlobalStoreService } from 'AppModule/Services/SlobalStoreService/GlobalsStoreService';
 
 @Component({
   selector: 'SideMenu',
   templateUrl: './SideMenuComponent.html',
   styleUrls: ['./SideMenuComponent.sass'],
 })
-export class SideMenuComponent implements OnInit {
-  constructor(private GlobalStoreObject: GlobalStore) {}
-  ApplicationMenu: MenuItem[] = [];
-
-  ngOnInit(): void {
-    this.ApplicationMenu = this.GlobalStoreObject.getApplicationMenu;
-  }
+export class SideMenuComponent {
+  constructor(public GlobalStoreObject: GlobalStoreService) {}
 }

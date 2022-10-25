@@ -1,5 +1,7 @@
 <Header id="Header"></Header>
-    <div id="ContentContainer">
+    <div id="ContentContainer"> <UserMenu *ngIf="this.GlobalStoreObject.GetShowUserMenu" id="UserMenu"></UserMenu>
    <SideMenu class="SideMenu"></SideMenu>
-   <Content id="Content"></Content>
+   <Content id="Content">
+   
+   </Content>
 </div>
